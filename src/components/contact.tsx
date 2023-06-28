@@ -35,7 +35,7 @@ export function Contact() {
                         exit={{ opacity: 0, y: 50, transition: { duration: 0.2, ease: 'easeInOut' } }}
                         className='flex flex-col items-center justify-center px-4 text-center mt-10'
                     >
-                        <p className='text-slate-100 text-xl font-medium'>
+                        <p className='text-slate-100 text-md md:text-xl font-medium'>
                             I&apos;m always open to new opportunities and ideas.<br /> If you have a project in mind, feel free to contact me.
                         </p>
                         <div

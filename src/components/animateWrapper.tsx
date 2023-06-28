@@ -30,9 +30,10 @@ export function AnimateWrapper({
         <div
             {...props}
             ref={ref}
+            className={`overflow-hidden ${props.className}`}
         >
             <motion.div
-                className={`w-full ${props.className}`}
+                className='w-full'
                 variants={variants}
                 initial='hidden'
                 animate={controls}

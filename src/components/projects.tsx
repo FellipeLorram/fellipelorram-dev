@@ -52,7 +52,7 @@ export function Projects() {
                                     alt='Gireh Manager'
                                     width={1920}
                                     height={1020}
-                                    className='rounded-lg border border-slate-700'
+                                    className='rounded-lg border border-slate-700 max-w-full'
                                 />
                                 <CardDescription className='text-slate-100 text-sm '>
                                     Gireh Manager is a web application built with React, Next.js, Tailwind CSS, and Firebase.
@@ -100,7 +100,7 @@ export function Projects() {
                                     alt='Gireh Catalog'
                                     width={1920}
                                     height={1020}
-                                    className='rounded-lg border border-slate-700'
+                                    className='rounded-lg border border-slate-700 max-w-full'
                                 />
                                 <CardDescription className='text-slate-100 text-sm '>
                                     Gireh Catalog is a web application built with React, Next.js, Tailwind CSS, and Firebase.
@@ -148,7 +148,7 @@ export function Projects() {
                                     alt='MindCare Co.'
                                     width={1920}
                                     height={1020}
-                                    className='rounded-lg border border-slate-700'
+                                    className='rounded-lg border border-slate-700 max-w-full'
                                 />
                                 <CardDescription className='text-slate-100 text-sm '>
                                     MindCare Co. is a web application built with React, Styled Components, and Node with Express.
