@@ -56,7 +56,7 @@ export function Projects() {
                                 />
                                 <CardDescription className='text-slate-100 text-sm '>
                                     Gireh Manager is a web application built with React, Next.js, Tailwind CSS, and Firebase.
-                                    The main purpose of this application is to manage the optics store's inventory. It also
+                                    The main purpose of this application is to manage the optics store&apos;s inventory. It also
                                     has a built-in POS system that can be used to sell products to customers.
                                 </CardDescription>
                             </CardContent>
@@ -104,8 +104,8 @@ export function Projects() {
                                 />
                                 <CardDescription className='text-slate-100 text-sm '>
                                     Gireh Catalog is a web application built with React, Next.js, Tailwind CSS, and Firebase.
-                                    The main purpose of this application is to provide a platform for the optics store's customers
-                                    to browse the store's products.
+                                    The main purpose of this application is to provide a platform for the optics store&apos;s customers
+                                    to browse the store&apos;s products.
                                 </CardDescription>
                             </CardContent>
                             <CardFooter className='flex flex-row gap-2 text-slate-100 items-center justify-center'>

@@ -19,10 +19,10 @@ export function About() {
         >
             <div className='w-full text-center my-40 mb-32 md:my-60 flex items-center justify-center flex-col px-4'>
                 <p className='text-lg text-slate-100 md:text-xl font-medium'>
-                    Hello, I'm Fellipe Lorram, a fullstack web developer who loves what he does.
+                    Hello, I&apos;m Fellipe Lorram, a fullstack web developer who loves what he does.
                 </p>
                 <p className='text-slate-300 text-sm md:text-md'>
-                    I'm 22 years old and since I was 16 I'm in the programming world, I started with C and Java,
+                    I&apos;m 22 years old and since I was 16 I&apos;m in the programming world, I started with C and Java,
                     <br className='hidden md:block' />
                     but I soon fell in love with JavaScript and its infinite possibilities.
                 </p>

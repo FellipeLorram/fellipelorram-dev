@@ -36,7 +36,7 @@ export function Contact() {
                         className='flex flex-col items-center justify-center px-4 text-center mt-10'
                     >
                         <p className='text-slate-100 text-xl font-medium'>
-                            I'm always open to new opportunities and ideas.<br /> If you have a project in mind, feel free to contact me.
+                            I&apos;m always open to new opportunities and ideas.<br /> If you have a project in mind, feel free to contact me.
                         </p>
                         <div
                             className='flex flex-col-reverse md:flex-row w-full items-center justify-center'>
