@@ -14,13 +14,13 @@ export function Contact() {
     const [formInView, setFormInView] = useState(true)
 
     async function onSubmit(data: ContactFormValues) {
-        // await fetch('/api/send-email', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(data),
-        // });
+        await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
 
         setFormInView(false);
     }
