@@ -1,14 +1,14 @@
 "use client"
 
 import { useState } from 'react'
-import { ContactForm } from './form/contactForm'
 import { ContactFormValues } from '@/lib/schemas/contactFormSchema'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Button } from './ui/button'
 
-import ContactSVG from './SVG/contactSVG'
-import MessageSVG from './SVG/messageSVG'
-import { AnimateWrapper } from './animateWrapper'
+import { AnimateWrapper } from '../animateWrapper'
+import { ContactForm } from '../form/contactForm'
+import ContactSVG from '../SVG/contactSVG'
+import MessageSVG from '../SVG/messageSVG'
+import { Button } from '../ui/button'
 
 export function Contact() {
     const [formInView, setFormInView] = useState(true)
@@ -30,6 +30,7 @@ export function Contact() {
             <AnimatePresence mode='wait'>
                 {formInView && (
                     <motion.div
+                        id="contact"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0, y: 50, transition: { duration: 0.2, ease: 'easeInOut' } }}

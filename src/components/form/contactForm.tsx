@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from '../ui/textarea';
 import { ContactFormSchema, ContactFormValues } from '@/lib/schemas/contactFormSchema';
+import { Circle, CircleDashed } from 'lucide-react';
 
 interface Props {
     onSubmit: (data: ContactFormValues) => void;
@@ -78,6 +79,11 @@ export function ContactForm({ onSubmit }: Props) {
                     type="submit"
                     disabled={form.formState.isSubmitting}
                 >
+                    {form.formState.isSubmitting && (
+                        <>
+                            <CircleDashed className='animate-spin mr-2 stroke-slate-400' strokeWidth={2} size={20} />
+                        </>
+                    )}
                     Submit
                 </Button>
             </form>

@@ -20,7 +20,7 @@ export function Header() {
                 </Link>
                 <div className='flex flex-col items-center justify-center gap-4 md:flex-row lg:gap-6'>
                     <div className='flex flex-row gap-4 lg:gap-6'>
-                        <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' href='#projects'>
+                        <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' href='/projects'>
                             Projects
                         </Link>
                         <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' href='#contact'>

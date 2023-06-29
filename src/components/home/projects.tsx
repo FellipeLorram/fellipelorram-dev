@@ -1,13 +1,14 @@
 import React from 'react'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader } from './ui/card'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '../ui/card'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-import { AnimateWrapper } from './animateWrapper'
+import { AnimateWrapper } from '../animateWrapper'
 
 export function Projects() {
     return (
         <AnimateWrapper
+            id='projects'
             variants={{
                 hidden: {
                     opacity: 0,

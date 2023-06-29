@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
-import { AnimateWrapper } from './animateWrapper'
+import { AnimateWrapper } from '../animateWrapper'
 
 export function About() {
     return (
@@ -9,7 +9,7 @@ export function About() {
             variants={{
                 hidden: {
                     opacity: 0,
-                    y: 25
+                    y: 75
                 },
                 visible: {
                     opacity: 1,
@@ -29,7 +29,7 @@ export function About() {
                 <Link href='/about' >
                     <div className='flex flex-row items-center justify-center gap-1 mt-2 text-slate-50 hover:text-slate-100 group transition-all duration-200 ease-in-out'>
                         <p>
-                            My history
+                            My Experience
                         </p>
                         <ArrowRight className='stroke-slate-50 h-4 w-4 group-hover:stroke-slate-100 duration-200 ease-in-out' />
                     </div>
