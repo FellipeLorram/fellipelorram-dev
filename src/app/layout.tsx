@@ -1,5 +1,7 @@
+import { Header } from '@/components/header'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
+import { Footer } from '@/components/footer'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -18,7 +20,9 @@ export default function RootLayout({
       <body className={`${montserrat.className} bg-slate-950`}>
         <main className='min-h-screen w-full flex justify-center'>
           <div className='w-11/12 max-w-[1240px]'>
+            <Header />
             {children}
+            <Footer />
           </div>
         </main>
       </body>
