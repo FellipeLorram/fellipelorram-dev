@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '../u
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-import { Project } from './project'
+import { Project } from '../../lib/projects'
 
 interface Props {
     project: Project
@@ -28,13 +28,13 @@ export function ProjectCard({ project }: Props) {
                 ease: 'easeInOut'
             }}
         >
-            <Card className='min-h-[482px] flex flex-col justify-between bg-transparent border border-slate-700 w-[500px] max-w-full shadow shadow-slate-800 self-stretch'>
+            <Card className='lg:min-h-[482px] flex flex-col justify-between bg-transparent border border-slate-700 w-[500px] max-w-full shadow shadow-slate-800 self-stretch'>
                 <CardHeader className='text-slate-100 text-lg font-medium'>
                     {project.title}
                 </CardHeader>
                 <CardContent className='flex flex-col gap-4'>
                     <Image
-                        src={project.image}
+                        src={project.images[0]}
                         alt='MindCare Co.'
                         width={1920}
                         height={1020}

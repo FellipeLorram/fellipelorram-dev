@@ -1,10 +1,8 @@
 import React from 'react'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '../ui/card'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { AnimateWrapper } from '../animateWrapper'
-import { projects } from '../projects/project'
+import { projects } from '../../lib/projects'
 import { ProjectCard } from '../projects/projectCard'
 
 export function Projects() {

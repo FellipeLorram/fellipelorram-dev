@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProjectCard } from './projectCard'
-import { projects } from './project'
+import { projects } from '../../lib/projects'
 import { AnimateWrapper } from '../animateWrapper'
 
 export function Projects() {
@@ -13,9 +13,11 @@ export function Projects() {
         variants={{
           hidden: {
             opacity: 0,
+            y: 20,
           },
           visible: {
             opacity: 1,
+            y: 0,
           },
         }}
       >
