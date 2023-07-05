@@ -62,6 +62,46 @@ export default function Page({ params }: { params: { slug: string } }) {
                     {project.solution}
                 </p>
                 <br />
+                {project.features && (
+                    <>
+                        <h2 className='font-semibold text-lg md:text-xl pb-1'>
+                            Features
+                        </h2>
+                        <ol
+                            className='list-decimal list-inside'
+                        >
+                            {project.features?.map(feature => (
+                                <li
+                                    key={feature}
+                                    className='text-left mb-2'>
+                                    {feature}
+                                </li>
+                            ))}
+                        </ol>
+
+                        <br />
+                    </>
+                )}
+
+                {project.features && (
+                    <>
+                        <h2 className='font-semibold text-lg md:text-xl pb-1'>
+                            Technical Features
+                        </h2>
+                        <ol
+                            className='list-decimal list-inside'
+                        >
+                            {project.technicalFeatures?.map(feature => (
+                                <li
+                                    key={feature}
+                                    className='text-left mb-2'>
+                                    {feature}
+                                </li>
+                            ))}
+                        </ol>
+                        <br />
+                    </>
+                )}
                 <h2 className='font-semibold text-lg md:text-xl pb-1'>
                     Technologies Used
                 </h2>
@@ -87,19 +127,35 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <h2 className='font-semibold text-lg md:text-xl pb-1'>
                     Learnings
                 </h2>
-                {project.learnings?.map(learn => (
-                    <p
-                        key={learn}
-                        className='text-left'>
-                        {learn}
-                    </p>
-                ))}
+                <ol
+                    className='list-decimal list-inside'
+                >
+                    {project.learnings?.map(learn => (
+                        <li
+                            key={learn}
+                            className='text-left mb-2'>
+                            {learn}
+                        </li>
+                    ))}
+                </ol>
                 <br />
                 <p className='text-left'>
-                    Github: {project.github}
+                    Github: <Link
+                        className='text-blue-500'
+                        target='_blank'
+                        href={project.github}
+                    >
+                        {project.github}
+                    </Link>
                 </p>
                 <p className='text-left'>
-                    Demo: {project.onlineDemo}
+                    Demo: <Link
+                        className='text-blue-500'
+                        target='_blank'
+                        href={project.onlineDemo || project.github}
+                    >
+                        {project.onlineDemo}
+                    </Link>
                 </p>
 
             </div>

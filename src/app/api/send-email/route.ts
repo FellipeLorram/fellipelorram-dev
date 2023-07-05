@@ -1,8 +1,6 @@
 import { ContactFormSchema } from '@/lib/schemas/contactFormSchema';
 import nodemailer from 'nodemailer';
 
-
-
 export async function POST(req: Request) {
     try {
 

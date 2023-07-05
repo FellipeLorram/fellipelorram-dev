@@ -4,6 +4,8 @@ export type Project = {
 
     problemStatement?: string;
     solution?: string;
+    features?: string[];
+    technicalFeatures?: string[];
     technologies?: string[];
     myRole?: string;
     challenges?: string[];
@@ -15,7 +17,7 @@ export type Project = {
     description: string;
     images: string[];
     link: string;
-    github?: string;
+    github: string;
 }
 
 export const projects: Project[] = [
@@ -23,22 +25,31 @@ export const projects: Project[] = [
         slug: "gireh-manager",
         title: "Gireh Manager",
         description: `Gireh Manager is a web application developed using React, Next.js, Tailwind CSS, and Firebase. Its primary objective is to efficiently manage inventory for an optics store, while also providing a user-friendly point-of-sale (POS) system for selling products to customers.`,
-
         problemStatement: `The current desktop application used by the optics store is inconvenient and limited in accessibility. To address these shortcomings, the store owner sought a web-based solution that allows remote access for inventory management and includes a user-friendly POS system for customer transactions.`,
-
         solution: `To meet the store owner's requirements, I created a web application that enables seamless inventory management accessible from anywhere. Additionally, I implemented a user-friendly POS system, empowering staff to efficiently sell products to customers.`,
-
         technologies: ["React", "Next.js", "Tailwind CSS", "Firebase"],
-
         myRole: `I was the sole developer of this project. I was responsible for the design and development of the
         web application.`,
-
+        features: [
+            "Comprehensive Reports: Empowering the store owner with valuable insights, the web application boasts an array of comprehensive reports. These reports provide crucial data on sales, inventory levels, and customer trends, enabling informed decision-making and strategic planning.",
+            "Real-Time Notifications: Enhancing operational efficiency, the system features real-time notifications. Staff members receive timely alerts about stock updates, low inventory levels, or new orders, ensuring prompt action and minimizing potential disruptions.",
+            "Streamlined Frame and Lenses Management: Seamlessly managing the optics store's vast inventory, the web application includes intuitive features for organizing and tracking frames and lenses. Staff members can effortlessly update stock availability, add new products, and track detailed information, simplifying inventory management tasks.",
+        ],
+        technicalFeatures: [
+            "Universal Database Hook: To ensure flexibility and compatibility, the web application incorporates a powerful universal database hook. This feature allows seamless integration with various databases, ensuring optimal performance and future scalability.",
+            "Progressive Web App (PWA) Capability: Elevating accessibility and user experience, the application harnesses the power of Progressive Web App (PWA) technology. Customers and staff can conveniently access the application on any device, enjoying app-like functionality and offline capabilities.",
+            "Catalog System Integration: For a unified and efficient workflow, the web application seamlessly integrates with the store's catalog system. This integration enables automatic synchronization of product details, ensuring accurate and up-to-date information for both inventory management and customer-facing interactions.",
+        ],
         challenges: [
             `One of the primary challenges I encountered was my limited experience with Next.js and Tailwind CSS. However, I embraced this opportunity to learn and familiarize myself with these technologies while building the web application.`,
         ],
-
         learnings: [
-            `I learned how to build a web application with Next.js, Tailwind CSS, and Firebase.`,
+            "Next.js Mastery: I deepened my understanding of Next.js, a powerful framework that facilitates efficient server-side rendering and seamless client-side navigation. I became adept at leveraging Next.js to develop performant and scalable web applications.",
+            "Styling with Tailwind CSS: I honed my skills in utilizing Tailwind CSS, an innovative utility-first CSS framework. I learned to leverage its comprehensive set of pre-built styles and intuitive classes to rapidly create visually appealing and responsive user interfaces.",
+            "Firebase Integration: I acquired expertise in integrating Firebase, a robust and versatile platform, into web applications. This included leveraging Firebase's real-time database, authentication, and hosting capabilities, allowing for seamless data management, secure user authentication, and efficient deployment.",
+            "Full-Stack Proficiency: By combining Next.js, Tailwind CSS, and Firebase, I obtained a comprehensive understanding of developing full-stack web applications. This encompassed the frontend development process, backend integration, data management, and deployment, empowering me to deliver end-to-end solutions.",
+            "Problem-Solving and Debugging: Throughout the development journey, I encountered and resolved various technical challenges. This experience enhanced my ability to diagnose issues, employ effective debugging strategies, and employ problem-solving skills, ultimately strengthening my overall development proficiency.",
+            "Best Practices and Optimization: I familiarized myself with industry best practices and optimization techniques for web application development. This includes code organization, performance optimization, security considerations, and adhering to coding standards, ensuring the delivery of high-quality and efficient solutions.",
         ],
 
         nextSteps: [
@@ -50,7 +61,7 @@ export const projects: Project[] = [
 
         images: ["/images/gireh-manager.png"],
         link: "/projects/gireh-manager",
-        github: "",
+        github: "https://github.com/FellipeLorram",
     },
     {
         slug: "gireh-catalog",
@@ -66,8 +77,18 @@ export const projects: Project[] = [
         easily manage the products displayed on the website.
         `,
 
-        solution: `To meet the store owner's requirements, I created a web application that enables customers to
-        browse the store's products.`,
+        solution: `Redefining the Optics Store Experience: A Captivating Web Application Empowering Seamless Product Exploration
+        In response to the store owner's aspirations, I meticulously crafted a groundbreaking web application that revolutionizes the way customers engage with the optics store's extensive product range. Seamlessly merging captivating design with cutting-edge functionality, the application introduces an array of features designed to delight customers at every click.`,
+        features: [
+            "Intuitive Cart: Streamlining the shopping experience, customers can effortlessly add desired products to their cart, creating a frictionless path to purchase.",
+            "Personalized Favorites Screen: Empowering customers to curate their own personalized wishlist, the favorites screen provides a delightful and convenient way to keep track of coveted items.",
+            "Owner's Panel: Providing the store owner with an exclusive insight into the customer journey, the owner's panel grants real-time access to leads, allowing for prompt and informed follow-ups."
+        ],
+        technicalFeatures: [
+            "Infinite Scroll: Enhancing user engagement, the application seamlessly loads additional products as customers explore, ensuring an uninterrupted and immersive browsing experience.",
+            "Progressive Web App (PWA): Elevating convenience and accessibility, the application harnesses PWA technology, enabling customers to conveniently access and interact with the web application across various devices without compromising performance.",
+            "POS System Integration: Seamlessly integrating with the store's point-of-sale system, the web application harmonizes online and in-store operations, streamlining inventory management and facilitating efficient customer transactions."
+        ],
 
         technologies: ["React", "Next.js", "Tailwind CSS", "Firebase"],
 
@@ -79,7 +100,12 @@ export const projects: Project[] = [
         ],
 
         learnings: [
-            `I learned how to build a web application with Next.js, Tailwind CSS, and Firebase.`,
+            "Next.js Mastery: I deepened my understanding of Next.js, a powerful framework that facilitates efficient server-side rendering and seamless client-side navigation. I became adept at leveraging Next.js to develop performant and scalable web applications.",
+            "Styling with Tailwind CSS: I honed my skills in utilizing Tailwind CSS, an innovative utility-first CSS framework. I learned to leverage its comprehensive set of pre-built styles and intuitive classes to rapidly create visually appealing and responsive user interfaces.",
+            "Firebase Integration: I acquired expertise in integrating Firebase, a robust and versatile platform, into web applications. This included leveraging Firebase's real-time database, authentication, and hosting capabilities, allowing for seamless data management, secure user authentication, and efficient deployment.",
+            "Full-Stack Proficiency: By combining Next.js, Tailwind CSS, and Firebase, I obtained a comprehensive understanding of developing full-stack web applications. This encompassed the frontend development process, backend integration, data management, and deployment, empowering me to deliver end-to-end solutions.",
+            "Problem-Solving and Debugging: Throughout the development journey, I encountered and resolved various technical challenges. This experience enhanced my ability to diagnose issues, employ effective debugging strategies, and employ problem-solving skills, ultimately strengthening my overall development proficiency.",
+            "Best Practices and Optimization: I familiarized myself with industry best practices and optimization techniques for web application development. This includes code organization, performance optimization, security considerations, and adhering to coding standards, ensuring the delivery of high-quality and efficient solutions.",
         ],
 
         nextSteps: [
@@ -90,6 +116,8 @@ export const projects: Project[] = [
 
         images: ["/images/gireh-catalog.png"],
         link: "/projects/gireh-catalog",
+        onlineDemo: "https://gireh-catalog.vercel.app/",
+        github: "Private",
     },
     {
         slug: "mindcare-co",
@@ -123,7 +151,8 @@ export const projects: Project[] = [
         conclusion: `Throughout this project, I gained valuable expertise in developing web applications using Node and Express. This experience enhanced my proficiency in utilizing these technologies effectively to build robust and scalable solutions.`,
         images: ["/images/mindcare-co.png"],
         link: "/projects/mindcare-co",
-        github: "",
+        github: "https://github.com/FellipeLorram/MindCare",
+        onlineDemo: "https://mind-care.vercel.app/"
     },
     {
         slug: "optical-manager",
@@ -157,7 +186,8 @@ export const projects: Project[] = [
 
         images: ["/images/optical-manager.png"],
         link: "/projects/optical-manager",
-        github: "",
+        github: "https://github.com/FellipeLorram/Optical-manager",
+        onlineDemo: "https://optical-manager.vercel.app/"
     },
     {
         slug: "opto-room",
@@ -192,6 +222,7 @@ export const projects: Project[] = [
 
         images: ["/images/opto-room.png"],
         link: "/projects/opto-room",
-        github: "",
+        github: "https://github.com/FellipeLorram/opto-room",
+        onlineDemo: "https://opto-room-kd20nwaor-fellipelorram.vercel.app/"
     },
 ];
