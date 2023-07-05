@@ -1,3 +1,4 @@
+import { AnimateWrapper } from '@/components/animateWrapper'
 import React from 'react'
 
 export default function Page() {
@@ -5,7 +6,24 @@ export default function Page() {
         <div
             className='flex flex-1 justify-center items-center text-slate-100 flex-col gap-5 mt-10'
         >
-            <div className='w-full max-w-[800px]'>
+            <AnimateWrapper
+                className='w-full max-w-[800px]'
+                variants={{
+                    hidden: {
+                        opacity: 0,
+                        y: 50
+                    },
+                    visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            delay: 0.2,
+                            duration: 0.5
+                        }
+                    }
+                }}
+            >
+
                 <h1 className='font-medium text-xl text-center md:text-2xl'>About</h1>
                 <br />
                 <p
@@ -57,7 +75,7 @@ export default function Page() {
                 >
                     So, if you're ready to embark on an exciting journey of building remarkable digital experiences, I'm here for you. Check out my projects to get a taste of what I've been up to, and let's connect to discuss how we can make your ideas shine. Together, we'll create something extraordinary!
                 </p>
-            </div>
+            </AnimateWrapper>
         </div>
     )
 }

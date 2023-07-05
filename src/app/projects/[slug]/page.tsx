@@ -4,6 +4,7 @@ import NotFoundSVG from '@/components/SVG/notFoundSVG';
 import { Project, projects } from '@/lib/projects'
 import { ArrowLeft } from 'lucide-react';
 import { ItemImages } from '@/components/carrosel';
+import { AnimateWrapper } from '@/components/animateWrapper';
 
 export default function Page({ params }: { params: { slug: string } }) {
     const project: Project | undefined = projects.find(project => project.slug === params.slug);
@@ -29,8 +30,23 @@ export default function Page({ params }: { params: { slug: string } }) {
 
     return (
         <div className='flex items-center justify-start mt-6 text-slate-200 flex-col'>
-            <div className='w-full max-w-[800px]'>
-                <h1 className='font-medium text-xl text-center md:text-2xl'>{project.title}</h1>
+            <AnimateWrapper
+                className='w-full max-w-[800px]'
+                variants={{
+                    hidden: {
+                        opacity: 0,
+                        y: 50
+                    },
+                    visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                            delay: 0.2,
+                            duration: 0.5
+                        }
+                    }
+                }}
+            >                <h1 className='font-medium text-xl text-center md:text-2xl'>{project.title}</h1>
                 <br />
                 <h2 className='font-semibold text-lg md:text-xl pb-1'>
                     Project Overview
@@ -158,7 +174,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                     </Link>
                 </p>
 
-            </div>
+            </AnimateWrapper>
         </div>
     )
 }
