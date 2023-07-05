@@ -25,10 +25,9 @@ export function Projects() {
         Projects
       </h1>
       <p className='text-slate-100 text-md mt-2'>
-        Here are some of the projects I&apos;ve worked on. <br />
-        All of these projects are personal projects that I&apos;ve built to learn new technologies and improve my skills. <br />
-        Some of these projects are still in development. <br />
-        I&apos;ve also worked on some projects for clients, but I can&apos;t share them here due to NDA.
+        Some of these are personal projects that I&apos;ve built to learn new technologies and improve my skills. <br />
+        Others are projects that I&apos;ve built for clients. <br />
+        
       </p>
       </AnimateWrapper>
       <div className='w-full flex flex-wrap items-start justify-center gap-8 mt-10'>

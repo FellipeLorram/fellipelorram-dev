@@ -67,8 +67,8 @@ export const projects: Project[] = [
         slug: "gireh-catalog",
         title: "Gireh Catalog",
         description: `Gireh Catalog is a web application built with React, Next.js, Tailwind CSS, and Firebase.
-        The main purpose of this application is to provide a platform for the optics store's customers
-        to browse the store's products.`,
+        It provides a platform for the optics store's customers
+        to browse products.`,
 
         problemStatement: `The optics store's current website is outdated and lacks the ability to display the store's
         products. To address this issue, the store owner sought a web-based solution that allows
@@ -123,8 +123,7 @@ export const projects: Project[] = [
         slug: "mindcare-co",
         title: "MindCare Co.",
         description: `MindCare Co. is a web application built with React, Styled Components, and Node with Express.
-        The main purpose of this application is to provide a platform for psychologists to manage their
-        patients and appointments.`,
+        A SASS built for psychologists manage patients and appointments.`,
 
         problemStatement: `The current desktop application used by the psychology clinic is inconvenient and limited in accessibility. To address these shortcomings, the clinic owner sought a web-based solution that allows remote access for managing patients and appointments.`,
 
@@ -193,7 +192,7 @@ export const projects: Project[] = [
         slug: "opto-room",
         title: "Opto Room",
         description: `Opto Room is a web application built with React, Styled Components, and Firebase.
-        The main purpose of this application is to provide a platform for optometrists to manage their
+        The main idea of this application is to provide a platform for optometrists to manage their
         patients and appointments.`,
 
         problemStatement: `The main idea is to create a sass application that any optometrist can use to manage their patients and appointments. The application should be able to manage patients, appointments, and prescriptions. It should also be able to generate reports and manage users.`,
