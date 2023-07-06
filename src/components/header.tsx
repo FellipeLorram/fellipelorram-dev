@@ -26,6 +26,9 @@ export function Header() {
                         <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' href='#contact'>
                             Contact
                         </Link>
+                        <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' target='_blank' href='/docs/Resume.pdf'>
+                            Resume
+                        </Link>
                     </div>
                     <div className='flex flex-row gap-6 md:gap-4 lg:gap-6'>
                         <Link target='_blank' href='mailto:fellipelorram@gmail.com'>

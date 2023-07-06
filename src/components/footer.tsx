@@ -1,4 +1,4 @@
-import { GithubIcon, Linkedin, Mail, Phone } from 'lucide-react'
+import { FileText, GithubIcon, Linkedin, Mail, Phone } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import { AnimateWrapper } from './animateWrapper'
@@ -33,6 +33,12 @@ export function Footer() {
                 </Link>
                 <Link target='_blank' href='https://github.com/FellipeLorram'>
                     <GithubIcon
+                        strokeWidth={2}
+                        className='stroke-slate-300 h-5 w-5 md:h-6 md:w-6 hover:stroke-slate-50 duration-200 ease-in-out transition'
+                    />
+                </Link>
+                <Link target='_blank' href='/docs/Resume.pdf'>
+                    <FileText
                         strokeWidth={2}
                         className='stroke-slate-300 h-5 w-5 md:h-6 md:w-6 hover:stroke-slate-50 duration-200 ease-in-out transition'
                     />
