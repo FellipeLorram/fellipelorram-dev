@@ -271,7 +271,7 @@ export const pt: Project[] = [
         slug: "gireh-catalog",
         title: "Gireh Catalog",
 
-        description: `Gireh Catalog é uma aplicação web construída com React, Next.js, Tailwind CSS e Firebase. Ele fornece uma plataforma para os clientes da loja de óptica navegarem pelos produtos.`,
+        description: `Gireh Catalog é uma aplicação web construída com React, Next.js, Tailwind CSS e Firebase. Ele fornece uma plataforma para os clientes da Ótica navegarem pelos produtos.`,
         problemStatement: `O website atual da loja de óptica está desatualizado e não possui a capacidade de exibir os produtos da loja. Para solucionar esse problema, o proprietário da loja buscou uma solução baseada na web que permitisse aos clientes navegar pelos produtos da loja. Está totalmente integrado com a aplicação web Gireh Manager, o que permite ao proprietário da loja gerenciar facilmente os produtos exibidos no site.
         `,
 

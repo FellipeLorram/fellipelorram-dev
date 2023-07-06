@@ -42,7 +42,11 @@ export function Header() {
                         <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' href='#contact'>
                             {language === 'pt' ? 'Contato' : 'Contact'}
                         </Link>
-                        <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' target='_blank' href='/docs/Resume.pdf'>
+                        <Link
+                            className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200'
+                            target='_blank'
+                            href={language === 'pt' ? '/docs/Curriculo.pdf': '/docs/Resume.pdf'}
+                        >
                             {language === 'pt' ? 'Currículo' : 'Resume'}
                         </Link>
                     </div>

@@ -7,15 +7,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Project } from '../../lib/projects'
-import { useSearchParams } from 'next/navigation';
+import { useAtom } from 'jotai';
+import { LanguageAtom } from '@/context/global';
 
 interface Props {
     project: Project
 }
 
 export function ProjectCard({ project }: Props) {
-    const params = useSearchParams();
-    const language = params.get('language');
+    const [language] = useAtom(LanguageAtom);
 
     return (
         <AnimateWrapper
