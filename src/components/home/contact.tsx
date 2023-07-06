@@ -77,7 +77,7 @@ export function Contact() {
                             className='w-full flex flex-col items-center justify-center mt-10'
                         >
                             <p className='text-slate-100 text-xl font-medium'>
-                                Thank you for your message!
+                                {language === 'pt' ? 'Obrigado pela sua mensagem!' : 'Thank you for your message!'}
                             </p>
                             <div>
                                 <MessageSVG
@@ -88,7 +88,7 @@ export function Contact() {
                                 onClick={() => setFormInView(true)}
                                 className='ml-4 text-sky-100 text-xl font-medium hover:text-sky-200'
                             >
-                                Send another message
+                                {language === 'pt' ? 'Enviar outra mensagem' : 'Send another message'}
                             </Button>
                         </motion.div>
                     )}
