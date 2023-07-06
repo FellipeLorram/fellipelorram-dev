@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import { AnimateWrapper } from '../animateWrapper'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '../ui/card'
@@ -5,12 +7,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Project } from '../../lib/projects'
+import { useSearchParams } from 'next/navigation';
 
 interface Props {
     project: Project
 }
 
 export function ProjectCard({ project }: Props) {
+    const params = useSearchParams();
+    const language = params.get('language');
+
     return (
         <AnimateWrapper
             variants={{
@@ -35,7 +41,7 @@ export function ProjectCard({ project }: Props) {
                 <CardContent className='flex flex-col gap-4'>
                     <Image
                         src={project.images[0]}
-                        alt='MindCare Co.'
+                        alt='.'
                         width={1920}
                         height={1020}
                         className='rounded-lg border border-slate-700 max-w-full'
@@ -49,7 +55,7 @@ export function ProjectCard({ project }: Props) {
                         className='flex flex-row gap-2 items-center justify-center'
                         href={project.link}>
                         <p>
-                            View Project
+                            {language == 'pt' ? "Ver projeto" : "View Project"}
                         </p>
                         <ArrowRight className='w-4 h-4' />
                     </Link>

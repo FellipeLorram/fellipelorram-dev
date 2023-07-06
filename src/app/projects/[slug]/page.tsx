@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import React from 'react'
 import NotFoundSVG from '@/components/SVG/notFoundSVG';
@@ -5,9 +7,14 @@ import { Project, projects } from '@/lib/projects'
 import { ArrowLeft } from 'lucide-react';
 import { ItemImages } from '@/components/carrosel';
 import { AnimateWrapper } from '@/components/animateWrapper';
+import { useAtom } from 'jotai';
+import { LanguageAtom } from '@/context/global';
 
-export default function Page({ params }: { params: { slug: string } }) {
-    const project: Project | undefined = projects.find(project => project.slug === params.slug);
+export default function Page({ params: { slug } }: { params: { slug: string }}) {
+    const [language] = useAtom(LanguageAtom);
+
+    const project: Project | undefined = projects[language]
+        .find(project => project.slug === slug);
 
     if (!project) {
         return (

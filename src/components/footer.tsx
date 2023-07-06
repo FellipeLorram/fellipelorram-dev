@@ -1,6 +1,5 @@
 import { FileText, GithubIcon, Linkedin, Mail, Phone } from 'lucide-react'
 import Link from 'next/link'
-import React from 'react'
 import { AnimateWrapper } from './animateWrapper'
 
 export function Footer() {

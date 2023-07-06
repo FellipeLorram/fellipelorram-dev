@@ -1,9 +1,25 @@
-import { GithubIcon, Linkedin, Mail, Phone } from 'lucide-react'
-import Link from 'next/link'
-import React from 'react'
-import { AnimateWrapper } from './animateWrapper'
+"use client";
+
+import { GithubIcon, Linkedin, Mail, Phone } from 'lucide-react';
+import Link from 'next/link';
+import { AnimateWrapper } from './animateWrapper';
+import { useAtom } from 'jotai';
+import { LanguageAtom } from '@/context/global';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
+import BrFlagSVG from './SVG/brFlagSVG';
+import UsaFlagSVG from './SVG/usaFlagSVG';
 
 export function Header() {
+    const [language, setLanguage] = useAtom(LanguageAtom);
+
+    const changeLanguage = () => {
+        if (language === 'pt') {
+            setLanguage('en');
+        } else {
+            setLanguage('pt');
+        }
+    }
+
     return (
         <AnimateWrapper
             className='w-full'
@@ -21,13 +37,13 @@ export function Header() {
                 <div className='flex flex-col items-center justify-center gap-4 md:flex-row lg:gap-6'>
                     <div className='flex flex-row gap-4 lg:gap-6'>
                         <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' href='/projects'>
-                            Projects
+                            {language === 'pt' ? 'Projetos' : 'Projects'}
                         </Link>
                         <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' href='#contact'>
-                            Contact
+                            {language === 'pt' ? 'Contato' : 'Contact'}
                         </Link>
                         <Link className='text-slate-300 text-lg hover:text-slate-50 ease-in-out duration-200' target='_blank' href='/docs/Resume.pdf'>
-                            Resume
+                            {language === 'pt' ? 'Currículo' : 'Resume'}
                         </Link>
                     </div>
                     <div className='flex flex-row gap-6 md:gap-4 lg:gap-6'>
@@ -55,6 +71,47 @@ export function Header() {
                                 className='stroke-slate-300 h-5 w-5 hover:stroke-slate-50 duration-200 ease-in-out transition'
                             />
                         </Link>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger>
+                                {language === 'pt' ? (
+                                    <BrFlagSVG
+                                        className='h-5 w-5 hover:stroke-slate-50 duration-200 ease-in-out transition'
+                                    />
+                                ) : (
+                                    <UsaFlagSVG
+                                        className='h-5 w-5 hover:stroke-slate-50 duration-200 ease-in-out transition'
+                                    />
+                                )}
+                                <DropdownMenuContent
+                                    className='bg-slate-900 border-slate-700 text-slate-50'
+                                >
+                                    <DropdownMenuLabel>
+                                        {language === 'pt' ? 'Idioma' : 'Language'}
+                                    </DropdownMenuLabel>
+                                    <DropdownMenuSeparator className='bg-slate-700' />
+                                    <DropdownMenuItem
+                                        className='focus:bg-slate-700 cursor-pointer'
+                                        onClick={changeLanguage}
+                                    >
+                                        {language === 'pt' ? (
+                                            <div className='flex w-full flex-row justify-start gap-2 items-center'>
+                                                <UsaFlagSVG className='h-5 w-5' />
+                                                <p className='text-slate-100'>
+                                                    English
+                                                </p>
+                                            </div>
+                                        ) : (
+                                            <div className='flex w-full flex-row justify-start gap-2 items-center'>
+                                                <BrFlagSVG className='h-5 w-5' />
+                                                <p className='text-slate-100'>
+                                                    Português
+                                                </p>
+                                            </div>
+                                        )}
+                                    </DropdownMenuItem>
+                                </DropdownMenuContent>
+                            </DropdownMenuTrigger>
+                        </DropdownMenu>
                     </div>
                 </div>
             </div>

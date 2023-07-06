@@ -20,7 +20,7 @@ export type Project = {
     github: string;
 }
 
-export const projects: Project[] = [
+export const en: Project[] = [
     {
         slug: "gireh-manager",
         title: "Gireh Manager",
@@ -225,3 +225,189 @@ export const projects: Project[] = [
         onlineDemo: "https://opto-room-kd20nwaor-fellipelorram.vercel.app/"
     },
 ];
+
+export const pt: Project[] = [
+    {
+        slug: "gireh-manager",
+        title: "Gireh Manager",
+        description: `Gireh Manager é uma aplicação web desenvolvida usando React, Next.js, Tailwind CSS e Firebase. Seu objetivo principal é gerenciar de forma eficiente o estoque de uma loja de óptica, além de oferecer um sistema de ponto de venda (POS) amigável ao usuário para vender produtos aos clientes.`,
+        problemStatement: `A aplicação desktop atualmente utilizada pela ótica é inconveniente e possui limitações de acessibilidade. Para solucionar essas deficiências, o proprietário da loja buscou uma solução baseada na web que permitisse acesso remoto para o gerenciamento de estoque e incluísse um sistema de ponto de venda (POS) amigável ao usuário para as transações com os clientes.`,
+        solution: `Para atender aos requisitos do proprietário da loja, criei uma aplicação web que possibilita um gerenciamento de estoque contínuo, acessível de qualquer lugar. Além disso, implementei um sistema de ponto de venda (POS) amigável ao usuário, capacitando a equipe a vender produtos de forma eficiente para os clientes.`,
+        technologies: ["React", "Next.js", "Tailwind CSS", "Firebase"],
+        myRole: `Fui o único desenvolvedor desse projeto. Fui responsável pelo design e desenvolvimento da aplicação web.`,
+        features: [
+            "Relatórios Abrangentes: Capacitando o proprietário da loja com insights valiosos, a aplicação web conta com uma variedade de relatórios abrangentes. Esses relatórios fornecem dados cruciais sobre vendas, níveis de estoque e tendências dos clientes, possibilitando tomadas de decisão informadas e planejamento estratégico.",
+            "Notificações em Tempo Real: Aumentando a eficiência operacional, o sistema possui recursos de notificações em tempo real. Os membros da equipe recebem alertas imediatos sobre atualizações de estoque, níveis baixos de inventário ou novos pedidos, garantindo ação rápida e minimizando possíveis interrupções.",
+            "Gerenciamento Simplificado de Armações e Lentes: Gerenciando com facilidade o vasto inventário da loja de óptica, a aplicação web inclui recursos intuitivos para organizar e rastrear armações e lentes. Os membros da equipe podem atualizar facilmente a disponibilidade do estoque, adicionar novos produtos e acompanhar informações detalhadas, simplificando as tarefas de gerenciamento de estoque.",
+        ],
+        technicalFeatures: [
+            "Universal Database Hook: Para garantir flexibilidade e compatibilidade, a aplicação web incorpora um poderoso universal database hook. Essa funcionalidade permite integração perfeita com vários bancos de dados, garantindo desempenho otimizado e escalabilidade futura.",
+            "Capacidade de Progressive Web App (PWA): Elevando a acessibilidade e a experiência do usuário, a aplicação utiliza a tecnologia Progressive Web App (PWA). Clientes e equipe podem acessar convenientemente a aplicação em qualquer dispositivo, desfrutando de funcionalidades semelhantes a um aplicativo e capacidades offline.",
+            "Integração com Sistema de Catálogo: Para um fluxo de trabalho unificado e eficiente, a aplicação web integra-se perfeitamente com o sistema de catálogo da loja. Essa integração permite a sincronização automática dos detalhes dos produtos, garantindo informações precisas e atualizadas tanto para o gerenciamento de estoque quanto para as interações com os clientes.",
+        ],
+        challenges: [
+            "Um dos principais desafios que encontrei foi minha experiência limitada com Next.js e Tailwind CSS. No entanto, abracei essa oportunidade para aprender e me familiarizar com essas tecnologias enquanto desenvolvia a aplicação web.",
+        ],
+
+        learnings: [
+            "Domínio do Next.js: Aprofundei meu entendimento do Next.js, um framework poderoso que facilita a renderização eficiente no lado do servidor e a navegação do lado do cliente. Tornei-me habilidoso em aproveitar o Next.js para desenvolver aplicações web performáticas e escaláveis.",
+            "Estilização com o Tailwind CSS: Aperfeiçoei minhas habilidades em utilizar o Tailwind CSS, um inovador framework de CSS orientado a utilidades. Aprendi a aproveitar seu amplo conjunto de estilos pré-criados e classes intuitivas para criar interfaces de usuário visualmente atraentes e responsivas de forma rápida.",
+            "Integração com o Firebase: Adquiri expertise em integrar o Firebase, uma plataforma robusta e versátil, em aplicações web. Isso incluiu aproveitar o banco de dados em tempo real, autenticação e recursos de hospedagem do Firebase, permitindo o gerenciamento contínuo de dados, autenticação segura de usuários e implantação eficiente.",
+            "Proficiência Full-Stack: Ao combinar Next.js, Tailwind CSS e Firebase, obtive um entendimento abrangente do desenvolvimento de aplicações web full-stack. Isso englobou o processo de desenvolvimento frontend, integração com o backend, gerenciamento de dados e implantação, capacitando-me a fornecer soluções completas.",
+            "Resolução de Problemas e Depuração: Ao longo da jornada de desenvolvimento, encontrei e resolvi diversos desafios técnicos. Essa experiência aprimorou minha capacidade de diagnosticar problemas, empregar estratégias eficazes de depuração e utilizar habilidades de resolução de problemas, fortalecendo minha proficiência geral em desenvolvimento.",
+            "Melhores Práticas e Otimização: Familiarizei-me com as melhores práticas da indústria e técnicas de otimização para o desenvolvimento de aplicações web. Isso inclui organização de código, otimização de desempenho, considerações de segurança e aderência a padrões de codificação, garantindo a entrega de soluções de alta qualidade e eficiência.",
+        ],
+
+        nextSteps: [
+            "Planejo adicionar mais recursos à aplicação web.",
+        ],
+        conclusion: `Ao longo deste projeto, adquiri expertise valiosa no desenvolvimento de aplicações web utilizando Next.js, Tailwind CSS e Firebase. Essa experiência aprimorou minha proficiência em utilizar essas tecnologias de forma eficaz para construir soluções robustas e escaláveis.`,
+
+        images: ["/images/gireh-manager.png"],
+        link: "/projects/gireh-manager",
+        github: "https://github.com/FellipeLorram",
+    },
+    {
+        slug: "gireh-catalog",
+        title: "Gireh Catalog",
+
+        description: `Gireh Catalog é uma aplicação web construída com React, Next.js, Tailwind CSS e Firebase. Ele fornece uma plataforma para os clientes da loja de óptica navegarem pelos produtos.`,
+        problemStatement: `O website atual da loja de óptica está desatualizado e não possui a capacidade de exibir os produtos da loja. Para solucionar esse problema, o proprietário da loja buscou uma solução baseada na web que permitisse aos clientes navegar pelos produtos da loja. Está totalmente integrado com a aplicação web Gireh Manager, o que permite ao proprietário da loja gerenciar facilmente os produtos exibidos no site.
+        `,
+
+        solution: `Redefinindo a Experiência da Loja de Óptica: Uma Aplicação Web Cativante que Capacita a Exploração Perfeita dos Produtos
+        Em resposta às aspirações do proprietário da loja, criei cuidadosamente uma aplicação web inovadora que revoluciona a forma como os clientes interagem com a extensa variedade de produtos da loja de óptica. Fundindo de forma harmoniosa um design cativante com funcionalidades de ponta, a aplicação apresenta uma série de recursos projetados para encantar os clientes a cada clique.`,
+
+        features: [
+            "Carrinho Intuitivo: Simplificando a experiência de compra, os clientes podem adicionar produtos desejados ao carrinho de forma fácil e intuitiva, criando um caminho livre de obstáculos para a compra.",
+            "Tela de Favoritos Personalizada: Capacitando os clientes a criar sua própria lista de desejos personalizada, a tela de favoritos oferece uma forma encantadora e conveniente de acompanhar os itens desejados.",
+            "Painel do Proprietário: Fornecendo ao proprietário da loja uma visão exclusiva da jornada do cliente, o painel do proprietário oferece acesso em tempo real aos leads, permitindo um acompanhamento ágil e informado."
+        ],
+        technicalFeatures: [
+            "Rolagem Infinita: Aumentando o engajamento do usuário, a aplicação carrega automaticamente produtos adicionais à medida que os clientes exploram, garantindo uma experiência de navegação contínua e imersiva.",
+            "Progressive Web App (PWA): Elevando a conveniência e acessibilidade, a aplicação utiliza a tecnologia PWA, permitindo que os clientes acessem e interajam com a aplicação web de forma conveniente em vários dispositivos, sem comprometer o desempenho.",
+            "Integração com Sistema de Ponto de Venda (POS): Integrando-se perfeitamente ao sistema de ponto de venda da loja, a aplicação web harmoniza as operações online e na loja física, simplificando o gerenciamento de estoque e facilitando as transações eficientes com os clientes."
+        ],
+
+        technologies: ["React", "Next.js", "Tailwind CSS", "Firebase"],
+
+        challenges: [
+            "Um dos principais desafios que encontrei foi minha experiência limitada com Next.js e Tailwind CSS. No entanto, abracei essa oportunidade para aprender e me familiarizar com essas tecnologias enquanto desenvolvia a aplicação web.",
+        ],
+
+        learnings: [
+            "Domínio do Next.js: Aprofundei meu entendimento do Next.js, um framework poderoso que facilita a renderização eficiente no lado do servidor e a navegação do lado do cliente. Tornei-me habilidoso em aproveitar o Next.js para desenvolver aplicações web performáticas e escaláveis.",
+            "Estilização com o Tailwind CSS: Aperfeiçoei minhas habilidades em utilizar o Tailwind CSS, um inovador framework de CSS orientado a utilidades. Aprendi a aproveitar seu amplo conjunto de estilos pré-criados e classes intuitivas para criar interfaces de usuário visualmente atraentes e responsivas de forma rápida.",
+            "Integração com o Firebase: Adquiri expertise em integrar o Firebase, uma plataforma robusta e versátil, em aplicações web. Isso incluiu aproveitar o banco de dados em tempo real, autenticação e recursos de hospedagem do Firebase, permitindo o gerenciamento contínuo de dados, autenticação segura de usuários e implantação eficiente.",
+            "Proficiência Full-Stack: Ao combinar Next.js, Tailwind CSS e Firebase, obtive um entendimento abrangente do desenvolvimento de aplicações web full-stack. Isso englobou o processo de desenvolvimento frontend, integração com o backend, gerenciamento de dados e implantação, capacitando-me a fornecer soluções completas.",
+            "Resolução de Problemas e Depuração: Ao longo da jornada de desenvolvimento, encontrei e resolvi diversos desafios técnicos. Essa experiência aprimorou minha capacidade de diagnosticar problemas, empregar estratégias eficazes de depuração e utilizar habilidades de resolução de problemas, fortalecendo minha proficiência geral em desenvolvimento.",
+            "Melhores Práticas e Otimização: Familiarizei-me com as melhores práticas da indústria e técnicas de otimização para o desenvolvimento de aplicações web. Isso inclui organização de código, otimização de desempenho, considerações de segurança e aderência a padrões de codificação, garantindo a entrega de soluções de alta qualidade e eficiência.",
+        ],
+
+        nextSteps: [
+            "Planejo adicionar mais recursos à aplicação web.",
+        ],
+        conclusion: `Ao longo deste projeto, adquiri expertise valiosa no desenvolvimento de aplicações web utilizando Next.js, Tailwind CSS e Firebase. Essa experiência aprimorou minha proficiência em utilizar essas tecnologias de forma eficaz para construir soluções robustas e escaláveis.`,
+
+        images: ["/images/gireh-catalog.png"],
+        link: "/projects/gireh-catalog",
+        onlineDemo: "https://gireh-catalog.vercel.app/",
+        github: "Private",
+    },
+    {
+        slug: "mindcare-co",
+        title: "MindCare Co.",
+
+        description: "MindCare Co. é uma aplicação web construída com React, Styled Components e Node com Express. Uma SASS desenvolvida para psicólogos gerenciarem pacientes e agendamentos.",
+        problemStatement: "A aplicação desktop atualmente utilizada pela clínica de psicologia é inconveniente e possui limitações de acessibilidade. Para solucionar essas deficiências, o proprietário da clínica buscou uma solução baseada na web que permitisse o acesso remoto para gerenciar pacientes e agendamentos.",
+
+        solution: "Para atender aos requisitos do proprietário da clínica, criei uma aplicação web que possibilita um gerenciamento perfeito de pacientes e agendamentos acessível de qualquer lugar.",
+
+        technologies: ["React", "Styled Components", "Node", "Express", "MongoDB"],
+
+        challenges: [
+            "Um dos principais desafios que encontrei foi minha experiência limitada com Node e Express. No entanto, abracei essa oportunidade para aprender e me familiarizar com essas tecnologias enquanto desenvolvia a aplicação web.",
+        ],
+
+        learnings: [
+            `Aprendi como construir uma aplicação web com Node e Express.`,
+        ],
+
+        nextSteps: [
+            `Meus próximos passos incluem adicionar mais recursos à aplicação web, como a geração de relatórios, o gerenciamento de pacientes e o gerenciamento de agendamentos.`,
+        ],
+
+        conclusion: `Ao longo deste projeto, adquiri conhecimentos valiosos no desenvolvimento de aplicações web utilizando Node e Express. Essa experiência aprimorou minha proficiência em utilizar essas tecnologias de forma eficaz para construir soluções robustas e escaláveis.`,
+        images: ["/images/mindcare-co.png"],
+        link: "/projects/mindcare-co",
+        github: "https://github.com/FellipeLorram/MindCare",
+        onlineDemo: "https://mind-care.vercel.app/"
+    },
+    {
+        slug: "optical-manager",
+        title: "Optical Manager",
+
+        description: "Optical Manager é uma aplicação web construída com React, Styled Components e Node com Express. O principal objetivo desta aplicação é gerenciar o estoque da loja de óptica.",
+        problemStatement: `A ideia principal é criar uma aplicação SASS que qualquer loja de óptica possa usar para gerenciar seu estoque. A aplicação deve ser capaz de gerenciar produtos, fornecedores e clientes. Também deve ser capaz de gerar relatórios e gerenciar usuários.`,
+
+        solution: `Para atender à declaração do problema, criei uma aplicação web que possibilita um gerenciamento perfeito do estoque acessível de qualquer lugar.`,
+
+        technologies: ["React", "Styled Components", "Node", "Express", "MongoDB"],
+
+        challenges: [
+            "Um dos principais desafios que encontrei foi minha experiência limitada com Node e Express. No entanto, abracei essa oportunidade para aprender e me familiarizar com essas tecnologias enquanto desenvolvia a aplicação web.",
+        ],
+
+        learnings: [
+            `Aprendi como construir uma aplicação web com Node e Express.`,
+        ],
+
+        nextSteps: [
+            `Meus próximos passos incluem adicionar mais recursos à aplicação web, como a geração de relatórios, o gerenciamento de pacientes e o gerenciamento de agendamentos.`,
+        ],
+
+
+        conclusion: `Ao longo deste projeto, adquiri conhecimentos valiosos no desenvolvimento de aplicações web utilizando Node e Express. Essa experiência aprimorou minha proficiência em utilizar essas tecnologias de forma eficaz para construir soluções robustas e escaláveis.`,
+
+        images: ["/images/optical-manager.png"],
+        link: "/projects/optical-manager",
+        github: "https://github.com/FellipeLorram/Optical-manager",
+        onlineDemo: "https://optical-manager.vercel.app/"
+    },
+    {
+        slug: "opto-room",
+        title: "Opto Room",
+
+        description: "Opto Room é uma aplicação web construída com React, Styled Components e Firebase. A ideia principal desta aplicação é fornecer uma plataforma para optometristas gerenciarem seus pacientes e agendamentos.",
+
+        problemStatement: `A ideia principal é criar uma aplicação SASS que qualquer optometrista possa usar para gerenciar seus pacientes e agendamentos. A aplicação deve ser capaz de gerenciar pacientes, agendamentos e prescrições. Também deve ser capaz de gerar relatórios e gerenciar usuários.`,
+
+        solution: `Para atender à declaração do problema, criei uma aplicação web que possibilita um gerenciamento perfeito de pacientes e agendamentos acessível de qualquer lugar.`,
+
+        technologies: ["React", "Styled Components", "Firebase"],
+
+        challenges: [
+            "Um dos principais desafios que encontrei foi minha experiência limitada com Firebase. No entanto, aproveitei essa oportunidade para aprender e me familiarizar com essas tecnologias enquanto construía a aplicação web.",
+        ],
+        learnings: [
+            `Aprendi como construir uma aplicação web com Firebase.`,
+        ],
+
+        nextSteps: [
+            `Meus próximos passos incluem adicionar mais recursos à aplicação web, como a geração de relatórios, o gerenciamento de pacientes e o gerenciamento de agendamentos.`,
+        ],
+
+
+        conclusion: `Ao longo deste projeto, adquiri conhecimentos valiosos no desenvolvimento de aplicações web utilizando o Firebase. Essa experiência aprimorou minha proficiência em utilizar essas tecnologias de forma eficaz para construir soluções robustas e escaláveis.`,
+
+        images: ["/images/opto-room.png"],
+        link: "/projects/opto-room",
+        github: "https://github.com/FellipeLorram/opto-room",
+        onlineDemo: "https://opto-room-kd20nwaor-fellipelorram.vercel.app/"
+    },
+];
+
+export const projects = {
+    en,
+    pt,
+}
